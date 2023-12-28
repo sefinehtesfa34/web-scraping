@@ -6,7 +6,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-class LinkedInBot:
+class LinkedInConnectionRequestAutomation:
     def __init__(self):
         self.options = Options()
         self.driver = webdriver.Chrome(options=self.options)
@@ -71,5 +71,5 @@ class LinkedInBot:
 if __name__ == "__main__":
     EMAIL = getpass('Enter your email: ')
     PASSWORD = getpass('Enter your password: ')
-    linkedin_bot = LinkedInBot()
+    linkedin_bot = LinkedInConnectionRequestAutomation()
     linkedin_bot.run()
